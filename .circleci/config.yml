@@ -18,7 +18,8 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
-      - codecov/upload
+      - codecov/upload:
+          token: CODECOV_TOKEN
 
 workflows:
   # Below is the definition of your workflow.
