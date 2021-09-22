@@ -10,6 +10,16 @@ orbs:
   # NOTE: Environment variables containing the necessary secrets can be setup in the CircleCI UI
   # See here https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-project
   heroku: circleci/heroku@1.2
+  codecov: codecov/codecov@3.1.0
+
+jobs:
+  upload-to-codecov:
+    docker:
+      # replace with your preferred image
+      - image: cimg/base:stable
+    steps:
+      - codecov/upload:
+          token: CODECOV_TOKEN
 
 workflows:
   # Below is the definition of your workflow.
@@ -28,3 +38,6 @@ workflows:
               # This sample config runs this job on any branch matching the regex below, however, it's more likely you want to only run this job on master.
               only: /.*-heroku-deploy/ # Delete this line
               # only: master  # Uncomment this line
+  up-to-codecov:
+    jobs:
+      - upload-to-codecov 
