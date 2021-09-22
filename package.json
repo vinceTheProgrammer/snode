@@ -1,0 +1,29 @@
+{
+  "name": "snode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinceTheProgrammer/snode.git"
+  },
+  "keywords": [
+    "Discord",
+    "Stick",
+    "Nodes",
+    "Bot"
+  ],
+  "author": "vinceTheProgrammer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinceTheProgrammer/snode/issues"
+  },
+  "homepage": "https://github.com/vinceTheProgrammer/snode#readme",
+  "devDependencies": {
+    "standard-version": "^9.3.1"
+  }
+}
