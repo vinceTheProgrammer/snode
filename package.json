@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "release": "standard-version"
   },
   "repository": {
@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/vinceTheProgrammer/snode#readme",
   "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1",
     "standard-version": "^9.3.1"
   }
 }
