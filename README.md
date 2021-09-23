@@ -1,2 +1,4 @@
 # Snode
 [![CircleCI](https://circleci.com/gh/vinceTheProgrammer/snode/tree/main.svg?style=shield)](https://circleci.com/gh/vinceTheProgrammer/snode/tree/main) [![CodeFactor](https://www.codefactor.io/repository/github/vincetheprogrammer/snode/badge)](https://www.codefactor.io/repository/github/vincetheprogrammer/snode) [![codecov](https://codecov.io/gh/vinceTheProgrammer/snode/branch/main/graph/badge.svg?token=KHT2U3CY86)](https://codecov.io/gh/vinceTheProgrammer/snode) ![GitHub](https://img.shields.io/github/license/vinceTheProgrammer/snode) ![Lines of code](https://img.shields.io/tokei/lines/github/vinceTheProgrammer/snode) ![GitHub package.json version](https://img.shields.io/github/package-json/v/vinceTheProgrammer/snode)
+
+Snode is a Discord bot written for the self-proclaimed unoffical official Stick Nodes Discord server. It will feature many command for interacting with sticknodes.com and the Stick Nodes community.
