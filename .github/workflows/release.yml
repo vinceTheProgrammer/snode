@@ -16,3 +16,4 @@ jobs:
       - run: git config --global user.name "Auto Snode Releaser"
       - run: yarn
       - run: npm run release
+      - run: git push
