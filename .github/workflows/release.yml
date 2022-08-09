@@ -12,5 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - run: git config --global user.email "vincetheprogrammer@gmail.com"
+      - run: git config --global user.name "vinceTheProgrammer"
       - run: yarn
       - run: npm run release
