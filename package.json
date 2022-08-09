@@ -1,0 +1,41 @@
+{
+  "name": "snode",
+  "version": "1.0.0",
+  "main": "out/index.js",
+  "repository": "https://github.com/vinceTheProgrammer/snode.git",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "postinstall": "tsc",
+    "test": "jest",
+    "start": "node out/index.js",
+    "watch:start": "tsc-watch --onSuccess \"node ./out/index.js\"",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "commit": "commit"
+  },
+  "prettier": "@sapphire/prettier-config",
+  "author": "vinceTheProgrammer <vincetheprogrammer@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@sapphire/framework": "^3.0.0-next.8ca7d7e.0",
+    "discord.js": "^13",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/prompt-cli": "^17.0.3",
+    "@sapphire/prettier-config": "^1.4.3",
+    "@sapphire/ts-config": "^3.3.4",
+    "@types/jest": "^28.1.6",
+    "babel-jest": "^28.1.3",
+    "commitlint": "^17.0.3",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.7.4"
+  }
+}
