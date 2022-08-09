@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "out/index.js",
   "repository": "https://github.com/vinceTheProgrammer/snode.git",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
