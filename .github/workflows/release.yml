@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: git config --global user.email "vincetheprogrammer@gmail.com"
-      - run: git config --global user.name "vinceTheProgrammer"
+      - run: git config --global user.email "snode-releaser@fakemail.com"
+      - run: git config --global user.name "Auto Snode Releaser"
       - run: yarn
       - run: npm run release
