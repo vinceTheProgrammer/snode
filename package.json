@@ -1,6 +1,6 @@
 {
   "name": "snode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "out/index.js",
   "repository": "https://github.com/vinceTheProgrammer/snode.git",
   "engines": {
@@ -21,9 +21,22 @@
   "author": "vinceTheProgrammer <vincetheprogrammer@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@kaname-png/plugin-statcord": "^2.1.2",
+    "@sapphire/async-queue": "^1.4.0",
+    "@sapphire/decorators": "^4.3.8",
+    "@sapphire/fetch": "^2.4.1",
     "@sapphire/framework": "^3.0.0-next.8ca7d7e.0",
+    "@sapphire/plugin-scheduled-tasks": "^3.0.0",
+    "@sapphire/snowflake": "^3.2.2",
+    "@sapphire/stopwatch": "^1.4.1",
+    "bullmq": "^1.87.1",
+    "cheerio": "^1.0.0-rc.12",
+    "discord-api-types": "0.33.5",
     "discord.js": "^13",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "fast-average-color-node": "^2.4.0",
+    "ioredis": "^5.2.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
@@ -35,6 +48,7 @@
     "@sapphire/prettier-config": "^1.4.3",
     "@sapphire/ts-config": "^3.3.4",
     "@types/jest": "^28.1.6",
+    "@types/lodash": "^4.14.182",
     "babel-jest": "^28.1.3",
     "commitlint": "^17.0.3",
     "jest": "^28.1.3",
