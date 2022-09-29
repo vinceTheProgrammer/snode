@@ -1,6 +1,7 @@
 require('dotenv').config();
 import { LogLevel, SapphireClient } from '@sapphire/framework';
-import { ScheduledTaskRedisStrategy } from '@sapphire/plugin-scheduled-tasks/register-redis'
+import { ScheduledTaskRedisStrategy } from '@sapphire/plugin-scheduled-tasks/register-redis';
+import './lib/utils/external/Sanitizer/initClean';
 import '@kaname-png/plugin-statcord/register';
 import Redis from 'ioredis';
 

@@ -16,6 +16,7 @@ export class RandomStickfigureCommand extends Command {
 	}
 
 	public override registerApplicationCommands(registry: ChatInputCommand.Registry) {
-		registry.registerChatInputCommand((builder) => builder.setName(this.name).setDescription(this.description));
+		registry.registerChatInputCommand((builder) => builder.setName(this.name).setDescription(this.description),
+		{ idHints: ['1007587553462992907', '1007556347807666176']  });
 	}
 }

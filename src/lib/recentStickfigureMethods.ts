@@ -5,8 +5,8 @@ import { AnyChannel, MessageEmbed } from 'discord.js';
 import _ from 'lodash'
 import redis from '../index';
 import StickfigurePost from './classes/StickfigurePost'
-import { isCurrentTimeWithinRange, sendRateLimitedMessageEmbeds } from './utils'
-import { recentlyAddedChannelID } from './config'
+import { isCurrentTimeWithinRange, sendRateLimitedMessageEmbeds } from './utils/utils'
+import { recentlyAddedChannelID } from '../../config'
 
 export function getRecentStickfigurePostUrls() : Promise<Array<string>> { 
     return new Promise(async (resolve, reject) => {
@@ -60,7 +60,7 @@ export function sendStickFigurePosts(stickfigurePostUrls: Array<string>, client 
             stickfigurePost = await stickfigurePost.resolveStickfigurePostInfo();
             messageEmbeds.push(stickfigurePost.getPreviewEmbed())
         };
-        if (isCurrentTimeWithinRange(new Date('20 Apr 2020 04:30:00'), 0, 35)) {
+        if (isCurrentTimeWithinRange(new Date('20 Apr 2020 06:30:00'), 2, 0)) {
             console.log('Within time range.');
             const alreadyReset = await redis.getbit('flags:reset-recent-stickfigures', 0);
             if (!alreadyReset) {

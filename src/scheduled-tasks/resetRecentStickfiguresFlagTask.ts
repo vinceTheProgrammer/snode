@@ -5,7 +5,7 @@ export class resetRecentStickfiguresFlagTask extends ScheduledTask {
 	public constructor(context: ScheduledTask.Context, options: ScheduledTask.Options) {
 		super(context, {
 			...options,
-			cron: '0 4 * * *' // at 4am every day
+			cron: '0 5 * * *' // at 5am every day
 		});
 	}
 

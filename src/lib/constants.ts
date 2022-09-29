@@ -9,6 +9,6 @@ export const enum StickNodesCategories {
     VEHICLES = 'vehicles'
 }
 
-export const enum Emojis {
-    LOADING_ANIMATED_COURTESY_OF_DRAGONITE = '<a:_:730555789730775042>'
-}
+export const enum ModalCustomIds {
+    EVAL = 'eval-modal'
+  }
