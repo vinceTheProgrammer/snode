@@ -31,7 +31,6 @@ import { brotliCompressSync, brotliDecompressSync } from 'node:zlib';
 
 export function compressCustomIdMetadata<T>(params: T, customMessagePart?: string): string {
     const serializedId = brotliCompressSync(serialize<T>(params)).toString('binary');
-    console.log("ID: " + serializedId);
     if (serializedId.length > 80) {
     const resolvedCustomMessagePart = customMessagePart ?? '';
     throw new UserError({

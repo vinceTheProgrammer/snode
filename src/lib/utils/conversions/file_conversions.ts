@@ -127,7 +127,6 @@ export async function nodesToJson(buffer: Buffer): Promise<Buffer> {
         numberOfChildNodes = buffer.readInt32BE(newOffset32());
     
         for(let i=0;i<numberOfChildNodes;i++) {
-            console.log(numberOfChildNodes);
             nodes.push(readNodes());
         }
     
@@ -168,7 +167,6 @@ export async function nodesToJson(buffer: Buffer): Promise<Buffer> {
     }
 
     function readPolyfill() {
-        console.log('polyfill');
         let drawOrderOfParentNode;
         let color;
         let usePolyfillColor;
@@ -344,9 +342,7 @@ export function jsonToNodes(buffer: Buffer): Promise<Buffer> {
 
         stickfigureBuffer.push(nodeBuffer);
 
-        console.log(node.nodes.length);
         for (let i = 0;i < node.nodes.length;i++) {
-            console.log('reeeee');
             writeNode(node.nodes[i]);
         }
 

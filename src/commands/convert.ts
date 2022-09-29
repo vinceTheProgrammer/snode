@@ -35,8 +35,6 @@ export class ConvertCommand extends Command {
             if (convertedBuffer === buffer) targetExt = ext != undefined ? ext : ".lolthisisanerror";
 
             attachment = await bufferToDiscordAttachment(convertedBuffer, filename, targetExt);
-
-            console.log(buffer);
         } catch(err) {
             return interaction.editReply({content: `There was an error with converting your file. Error message: ${err}`});
         }
@@ -58,8 +56,7 @@ export class ConvertCommand extends Command {
             option //
             .setName('ephemeral')
             .setDescription('Set this to true to keep output private and temporary.')
-        ),
-        {idHints: ['1012817353215574187']});
+        ));
 	}
 }
 

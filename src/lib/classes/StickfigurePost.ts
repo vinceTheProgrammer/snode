@@ -33,7 +33,6 @@ class StickfigurePost {
                 this.authorNickname = $('.author-name').children('a').text() || $('.author-name').text();
                 this.authorUrl = $('.author-name').children('a').attr('href') || 'http://sticknodes.com';
                 this.description = $('.description-box').text();
-                console.log($('.description-box').html())
                 //this.tags;
                 //this.category;
                 this.thumbnailUrl = $('.pic').find('a').find('img').attr('src') || 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Question_Mark.svg/2560px-Question_Mark.svg.png';
@@ -67,7 +66,6 @@ class StickfigurePost {
     }
 
     getVerboseEmbed() : MessageEmbed {
-        console.log('EMBEEEED: ' + this.description);
         const embed = new MessageEmbed()
             .setTitle(this.title)
             .setAuthor({ name: this.authorNickname, iconURL: this.iconUrl, url: this.authorUrl })
@@ -78,7 +76,6 @@ class StickfigurePost {
             .setColor(this.color)
             .setTimestamp(this.uploadDate)
             .setDescription(this.description)
-        console.log(embed);
         return embed;
     }
 }
