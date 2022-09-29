@@ -1,6 +1,6 @@
 {
   "name": "snode",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main": "out/src/index.js",
   "repository": "https://github.com/vinceTheProgrammer/snode.git",
   "engines": {
