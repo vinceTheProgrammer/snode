@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.1.0 (2022-09-29)
+
+
+### Features
+
+* add convert command ([2b852ed](https://github.com/vinceTheProgrammer/snode/commit/2b852ed957768328120c870fddd09be3e1710e89))
+
 ### 1.0.3 (2022-08-12)
 
 ### 1.0.2 (2022-08-12)
