@@ -1,6 +1,5 @@
 require('dotenv').config();
 import { LogLevel, SapphireClient } from '@sapphire/framework';
-import { ScheduledTaskRedisStrategy } from '@sapphire/plugin-scheduled-tasks/register-redis';
 import './lib/utils/external/Sanitizer/initClean';
 import '@kaname-png/plugin-statcord/register';
 import Redis from 'ioredis';
@@ -22,7 +21,6 @@ const client = new SapphireClient({
 	},
 	shards: 'auto',
 	intents: ['GUILD_MEMBERS'],
-	tasks: { strategy: new ScheduledTaskRedisStrategy({ bull: { connection: redis } }) },
 	statcord: { 
 		key: process.env.STATCORD_KEY || '', // TODO: this is kind of a hack... look into a better way of doing this later
 		autopost: true,
